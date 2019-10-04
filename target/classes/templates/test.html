@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试thymeleaf</title>
+</head>
+<body>
+	<h1 th:text="${name}"></h1>
+
+	<hr />
+	
+	<div shiro:hasPermission="user:add" >
+		进入到添加功能:<a href="add">添加功能</a>
+	</div>
+	
+	<div shiro:hasPermission="user:update" >
+		进入到更新功能:<a href="update">更新功能</a>
+	</div>
+	
+	<a href="toLogin">登录</a>
+	
+</body>
+</html>
